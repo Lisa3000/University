@@ -1,0 +1,57 @@
+.page-links {
+  position: relative;
+  z-index: 1;
+  width: 300px;
+  margin: 30px auto;
+  @mixin atSmallMedium {
+    margin: 0 0 40px 20px;
+    width: 300px;
+    float: right;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: normal;
+    text-align: center;
+    padding: 8px 0;
+    background-color: $mainBlue;
+    color: #FFF;
+
+      a {
+        color: #FFF;
+        text-decoration: none;
+        background-color: $mainBlue;
+      }
+  }
+
+  li {
+    border-top: 1px solid color($mainBlue l(-14%));
+  }
+
+  li:first-child {
+    border-top: none;
+  }
+
+  &__active,
+  & .current_page_item {
+    text-align: center;
+    font-weight: bold;
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  li a {
+    display: block;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    transition: all .3s;
+  }
+
+  li a:hover {
+    color: color($mainBlue b(+6%));
+    /*background-color: color($lightOrange blackness(+18%) s(+65%));*/
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,26 @@
+.generic-content {
+  min-height: 450px;
+  p, li {
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+  }
+
+  blockquote, blockquote p {
+    font-size: 1.5rem;
+    font-style: italic;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rosario', sans-serif;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  h1 {font-size: 3rem}
+  h2 {font-size: 2rem}
+  h3 {font-size: 1.9rem}
+  h4 {font-size: 1.4rem}
+  h5 {font-size: 1.25rem}
+  h6 {font-size: 0.9rem}
+}
